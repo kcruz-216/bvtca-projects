@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>kirstie-cruz-login-ui-with-flexbox</title>
+<style> 
+    html,body {
+    margin: 0px;
+}
+.container  {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    background-color: #d7ecf2;
+    align-items: center;
+    justify-content: center;
+}
+.card {
+    background-color: #ffffff;
+    border-style: hidden;
+    border-width: 4px;
+    border-radius: 12px;
+    -webkit-box-shadow: 10px 10px 15px 0px rgba(179,177,179,1);
+    -moz-box-shadow: 10px 10px 15px 0px rgba(179,177,179,1);
+    box-shadow: 10px 10px 15px 0px rgba(179,177,179,1);
+    min-width: 25%;
+    min-height: 20%;
+}
+#top  {
+  font-family: sans-serif;
+  font-weight:normal;
+}
+.form {
+    border-style:hidden;
+	  display:flex;
+  	flex-direction: column;
+	  width:70%;
+}
+.box  {
+	padding:15px;
+	width:70%;
+	margin:10px;
+	border: 1px solid gray;
+  border-top: hidden;
+  border-left: hidden;
+  border-right: hidden;
+	outline:none;
+}
+#signin {
+	padding:10px 20px;
+  width: 70%;
+	background-color: rgba(27,112,242,1.00);
+	color: white;
+	font-weight:normal;
+	border:none;
+	outline:none;
+	border-radius:20px;
+	margin-bottom:20px;
+}
+</style>
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+    <form class="signin" action=""> 
+        <center><h2 id="top">Sign in</h2></center>
+        <center><br><input type="text" title="username" placeholder="username" class="box"></center>
+        <center><br><input type="password" title="password" placeholder="password" class="box"></center>
+        <center><br><button type="button" id="signin">Sign in</button></center>
+    </form>
+    </div>
+  </div>
+</body>
+</html>
