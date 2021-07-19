@@ -4,29 +4,44 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>kirstie-cruz-email-template-with-bootstrap-grid</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
     <div class="container-fluid">
         <div class="row">
-        <!--Menu Items-->
-        <div class="col-sm-2">
-            <h6 id="greeting">Welcome, Brock!</h6>
+        <!--Navigation Menu-->
+        <div id="nav-menu" class="col col-md-2">
+            <h6 id="greeting"><svg xmlns="http://www.w3.org/2000/svg" id="image-logo" width="50" height="50" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+              </svg> Welcome, Brock!</h6><br>
             <button type="button" class="btn btn-warning">COMPOSE</button>
+            <br>
+            <br>
             <ul class="options">
-                <li>Inbox (1)</li>
-                <li>Tagged</li>
-                <li>Important</li>
-                <li>Sent Mail</li>
-                <li>Drafts</li>
-                <li>Trash</li>
+                <li><a href="#">Inbox (1)</a></li><br>
+                <li><a href="#">Tagged</a></li><br>
+                <li><a href="#">Important</a></li><br>
+                <li><a href="#">Sent Mail</a></li><br>
+                <li><a href="#">Drafts</a></li><br>
+                <li><a href="#">Trash</a></li><br>
             </ul>
         </div>
-        <!--Inbox Items-->
-        <div class="col-sm-4">
-            <input type="text" id="search" placeholder="Search for emails">
+        <!--Inbox Menu-->
+        <div id="inbox-menu" class="col col-md-4">
+            <!--Search Bar-->
+            <div class="input-group w-100">
+                <span class="input-group-text" id="basic-addon1">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"></path>
+                </svg>
+                </span>
+                <input type="text" class="form-control" placeholder="Search for emails" aria-label="Search for emails" aria-describedby="basic-addon1">
+              </div>
+            <!--Email Cards-->
             <div class="card1">
                 <span class="date-time">02:45pm</span>
                 <h6 class="email-sender">LinkedIn</h6>
@@ -43,10 +58,32 @@
                 <p>Learn how you can give us money by calling (209) 322 7...</p>
             </div>
         </div>
-        <!--Email Box-->
-        <div class="col-sm-6">
-            Email!
-        </div>
+        <!--Email Window-->
+        <div id="email-window" class="col col-md-6">
+            <p class="to-from"><strong>To:</strong> taylor@lamarsoftware.io</p>
+            <p class="to-from"><strong>From:</strong> re-reply@theofficenbc.com</p>
+            <span class="email-icons">
+                <button class="icons"><i class="fa fa-trash"></i></button>
+                <button class="icons"><i class="fa fa-reply"></i></button>
+                <button class="icons"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-three-dots" viewBox="0 0 16 16">
+                    <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+                  </svg></button>
+            </span>
+            <h4 id="email-title">Michael Scott Daily Quotes</h4>
+            <p class="email-body">"Friends joke with one another. 'Hey, you're poor.' 'Hey, your momma's dead.' That's what friends do."</p>
+            <p class="email-body">"It's a good thing Russia doesn't exist anymore"</p>
+            <p class="email-body">"You cheated on me? When I specifically asked you not to?"</p>
+            <p class="email-body">"It just seems awfully mean. But sometimes, the ends justify the mean."</p>
+            <p class="email-body">"Reverse psycholoyg is an awesome tool. I don't know if you guys know about it, but, basically, you make someone think the opposite of what you believe, and that tricks them into doing something stupid. Works like a charm."</p>
+            <div class="form-floating">
+                <textarea id="reply-box" placeholder="Reply here"></textarea>
+                <span class="reply-icons">
+                    <button class="icons"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-paperclip" viewBox="0 0 16 16">
+                        <path d="M4.5 3a2.5 2.5 0 0 1 5 0v9a1.5 1.5 0 0 1-3 0V5a.5.5 0 0 1 1 0v7a.5.5 0 0 0 1 0V3a1.5 1.5 0 1 0-3 0v9a2.5 2.5 0 0 0 5 0V5a.5.5 0 0 1 1 0v7a3.5 3.5 0 1 1-7 0V3z"/>
+                      </svg></button>
+                    <button type="button" class="btn btn-outline-warning">REPLY</button>
+                </span>
+            </div>
         </div>
     </div>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
