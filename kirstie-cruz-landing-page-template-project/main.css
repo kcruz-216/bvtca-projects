@@ -1,0 +1,43 @@
+body, html{
+    margin: 0px;
+    height: 100vh;
+    width: 100vw;
+    background-color: #dee2d6;
+}
+#form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 8em;
+    padding-bottom: 2em;
+}
+strong {
+    font-weight:bold;
+    font-size: 30px;
+}
+.navbar-nav2{
+    list-style:square;
+}
+#about-us{
+    padding-bottom: 2em;
+    text-align: center;
+}
+#feature{
+    padding-bottom: 2em;
+    text-align: center;
+}
+#member-package{
+    padding-bottom: 2em;
+    text-align: center;
+}
+.card-deck{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card-title{
+    text-align: center;
+}
+.card-text{
+    text-align: center;
+}
