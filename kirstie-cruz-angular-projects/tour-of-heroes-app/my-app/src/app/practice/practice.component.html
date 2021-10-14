@@ -1,0 +1,15 @@
+<h2>Select Battle Field</h2>
+<ul class="battlefields">
+  <li *ngFor="let BattleFields of BattleFields">
+    <span class="badge">{{BattleFields.id}}</span> {{BattleFields.name}}
+  </li>
+</ul>
+
+<div *ngIf="selectedBattleFields">
+  <h2>{{selectedBattleFields.name | uppercase}} Details</h2>
+  <div><span>id: </span>{{selectedBattleFields.id}}</div>
+  <div>
+    <label for="BattleFields-name">Selected Battle Field: </label>
+    <input id="BattleFields-name" [(ngModel)]="selectedBattleFields.name" placeholder="name">
+  </div>
+</div>
