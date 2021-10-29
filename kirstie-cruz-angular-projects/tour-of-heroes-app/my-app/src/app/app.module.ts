@@ -10,6 +10,8 @@ import { MessagesComponent } from './messages/messages.component';
 
 import { AppRoutingModule } from './app-routing.module';
 import { PracticeComponent } from './practice/practice.component';
+import { ParentComponent } from './parent/parent.component';
+import { ChildComponent } from './parent/child/child.component';
 
 @NgModule({
   imports: [
@@ -23,7 +25,9 @@ import { PracticeComponent } from './practice/practice.component';
     HeroesComponent,
     HeroDetailComponent,
     MessagesComponent,
-    PracticeComponent
+    PracticeComponent,
+    ParentComponent,
+    ChildComponent
   ],
   bootstrap: [ AppComponent ]
 })
